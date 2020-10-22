@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Body-pixel parser Tensorflow</title>
+    <!-- Load TensorFlow.js -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.2"></script> -->
+    <script src="js/module/tfjs.min.js"></script>
+    <!-- Load BodyPix -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/body-pix@2.0"></script> -->
+    <script src="js/module/body-pix.min.js"></script>
+ </head>
+
+  <body>
+    <div class="d-flx m-20">
+      <video id="video" class="rotY m-20">Video stream not available.</video>
+      <canvas id="canvas" class="d-no"></canvas>
+      <img id="photo" class="rotY m-20" alt="" style="display: none;">
+    </div>
+    <div class="m-20">
+      <button id="startbutton">Take photo</button>
+      <button id="clearbutton">Clear</button>
+    </div>
+    <div class="m-20 d-flx">      
+      <canvas id="canvasImage" class="rotY m-20"></canvas>
+    </div>
+  </body>
+  <script src="js/camera.js"></script>
+  <script src="js/index.js"></script>
+</html>
